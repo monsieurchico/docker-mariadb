@@ -29,7 +29,7 @@ RUN \
 EXPOSE 3306
 
 # define mountable volumes
-VOLUME ["/etc/mysql", "/var/lib/mysql"]
+VOLUME ["/etc/mysql"]
 
 # add launch script
 COPY ./resources/startup.sh /startup.sh

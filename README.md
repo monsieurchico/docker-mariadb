@@ -22,17 +22,14 @@ You can bind ports :
 You can mount directories :
 
 * /etc/mysql : conf
-* /var/lib/mysql : data
 
 ## Usage
 
 ```bash
 # pull (auto) and run
-# be careful with the mount point. Depending on the rights, mysql can fail at startup
 docker run \
     -d \
     --name db \
     -p 3306:3306 \
-    -v /opt/docker/mysql/data:/var/lib/mysql \
     monsieurchico/mariadb
 ```
