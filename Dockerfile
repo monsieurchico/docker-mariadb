@@ -1,5 +1,5 @@
 #
-# Nginx Dockerfile
+# Mariadb Dockerfile
 # git@github.com:monsieurchico/docker-mariadb.git
 #
 FROM ubuntu:latest
