@@ -26,16 +26,11 @@ You can mount directories :
 
 ```bash
 # pull (auto) and run
-docker run \
-    -p 3306:3306 \
-    --name db \
-    -d monsieurchico/mysql
-
-# mount volumes
 # be careful with the mount point. Depending on the rights, mysql can fail at startup
 docker run \
+    -d \
+    --name db \
     -p 3306:3306 \
     -v /opt/docker/mysql/data:/var/lib/mysql \
-    --name db \
-    -d monsieurchico/mysql
+    monsieurchico/mysql
 ```
