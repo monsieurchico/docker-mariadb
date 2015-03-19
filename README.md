@@ -34,5 +34,5 @@ docker run \
     --name db \
     -p 3306:3306 \
     -v /opt/docker/mysql/data:/var/lib/mysql \
-    monsieurchico/mysql
+    monsieurchico/mariadb
 ```
