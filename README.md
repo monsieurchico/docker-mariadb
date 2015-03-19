@@ -9,6 +9,8 @@ You must have [Docker](https://www.docker.com/) >= 1.5.
 * [latest ubuntu](https://github.com/dockerfile/ubuntu)
 * [latest mariadb 10](https://downloads.mariadb.org/)
 
+### Configuration
+
 ### Ports
 
 You can bind ports :
