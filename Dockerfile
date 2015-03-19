@@ -12,8 +12,7 @@ ENV TERM xterm-256color
 
 # update os and install mariadb
 RUN \
-    apt-get wget && \
-    apt-get update && \
+    apt-get install -y wget && \
     apt-get -y install software-properties-common && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0xcbcb082a1bb943db && \
     echo "deb http://mariadb.mirror.iweb.com/repo/$DB_VERSION/ubuntu `lsb_release -cs` main" > /etc/apt/sources.list.d/mariadb.list && \
