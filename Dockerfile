@@ -8,9 +8,11 @@ MAINTAINER Romain Derocle "rderocle@gmail.com"
 # prevent debian errors
 ENV DEBIAN_FRONTEND noninteractive
 ENV DB_VERSION 10.0
+ENV TERM xterm-256color
 
 # update os and install mariadb
 RUN \
+    apt-get wget && \
     apt-get update && \
     apt-get -y install software-properties-common && \
     apt-key adv --keyserver hkp://keyserver.ubuntu.com:80 --recv 0xcbcb082a1bb943db && \
@@ -38,4 +40,4 @@ COPY ./resources/startup.sh /startup.sh
 ENTRYPOINT ["/bin/bash", "/startup.sh"]
 
 # define workdir
-WORKDIR /etc/mysql
+WORKDIR /
