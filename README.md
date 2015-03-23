@@ -23,6 +23,21 @@ You can mount directories :
 
 * /etc/mysql : conf
 
+### Encoding
+
+Here is the mariadb.cnf configuration :
+
+```ini
+[client]
+default-character-set = utf8
+
+[mysqld]
+character-set-server  = utf8
+collation-server      = utf8_general_ci
+character_set_server   = utf8
+collation_server       = utf8_general_ci
+```
+
 ## Usage
 
 ```bash
