@@ -22,6 +22,7 @@ You can bind ports :
 You can mount directories :
 
 * /etc/mysql : conf
+* /var/lib/mysql : data
 
 ### Encoding
 
